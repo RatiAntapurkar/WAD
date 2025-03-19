@@ -1,1 +1,12 @@
-<p>home works!</p>
+<h2>Welcome to the Rati's Angular App</h2>
+
+<div *ngIf="user">
+  <p><strong>Name:</strong> {{ user.name }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <button (click)="logout()">Logout</button>
+</div>
+
+<div *ngIf="!user">
+  <a routerLink="/register">Register</a> |
+  <a routerLink="/login">Login</a>
+</div>

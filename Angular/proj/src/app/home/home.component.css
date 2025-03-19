@@ -1,0 +1,24 @@
+.welcome-container {
+  text-align: center;
+}
+
+.user-info {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.user-info p {
+  font-size: 18px;
+  color: #333;
+}
+
+.logout-btn {
+  margin-top: 15px;
+  background-color: #dc3545;
+}
+
+.logout-btn:hover {
+  background-color: #b02a37;
+}

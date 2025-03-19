@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: false,
@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  user: any;
 
+  constructor(private router: Router) {
+    const storedUser = localStorage.getItem('user');
+    this.user = storedUser ? JSON.parse(storedUser) : null;
+  }
+
+  logout() {
+    localStorage.removeItem('loggedIn');
+    this.router.navigate(['/login']);
+  }
 }
+
