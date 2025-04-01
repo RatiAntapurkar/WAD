@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Multi-Page App</title>
+	<link rel="stylesheet" href="themes/B.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		*{
+			font-family: 'Courier New', Courier, monospace;
+		}
+		#contact {
+			background: linear-gradient(to right, #ff9966, #ff5e62);
+			color: white;
+			
+		}
+
+	</style>
+</head>
+
+<body>
+<div data-role="page" id="home" data-theme="b">
+		<div data-role="header" data-position="fixed">
+		<h1>hello</h1>
+			<div data-role="navbar">
+				<ul>
+	     		<li><a href="#home" class="ui-btn-active">home</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#contact">contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<p>hi Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae odio dolorem molestiae
+				iusto corrupti ratione optio temporibus voluptates, deserunt ipsum accusantium tenetur neque eum! Nobis
+				placeat itaque nemo autem!lorem
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, asperiores quisquam, quaerat optio
+				commodi laudantium, cumque sint atque dolor ut temporibus. Iure expedita aliquam, maiores nisi itaque
+				deleniti perspiciatis possimus!
+			</p>
+			<a href="#about" data-role="button" data-transition="flip">
+
+				<div>about</div>
+			</a>
+			<a href="#contact" data-role="button" data-transition="fade">go to contact</a>
+			<div style="display: flex; justify-content: center; align-items: center;">
+				<img src="image.jpg" alt="" style="border-radius: 50px;">
+			</div>
+		</div>
+	<div data-role="footer" data-position="fixed">
+			<h4>lorem footer</h4>
+		</div>
+</div>
+	<div data-role="page" id="about" data-theme="a">
+		<div data-role="header" data-position="fixed">
+			<h1>about</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">home</a></li>
+					<li><a href="#about" class="ui-btn-active">about</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="content">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sapiente alias illum iste, atque unde cupiditate magni ab placeat perferendis obcaecati ducimus autem ex velit officiis ea quasi odit tempore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nulla quis dolores distinctio consectetur dolore ut ratione esse odit non alias error molestias, iure dolorem voluptate! Vel necessitatibus architecto voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi repellat incidunt consectetur qui culpa tenetur minus dignissimos necessitatibus quibusdam consequatur quia eos ea, voluptas cum? Voluptatem ipsa tempora sit. Corrupti. .</p>
+			<a href="#home" data-role="button" data-transition="slide" data-direction="reverse">go to home</a>
+			<div style="display: flex; justify-content: center; align-items: center;">
+				<img src="image3.jpg" alt="" style="border-radius: 50px;">
+			</div>
+	</div>
+		<div data-role="footer" data-position="fixed">
+			<h4> Footer</h4>
+		</div>
+	</div>
+	<div data-role="page" id="contact" data-theme="c">
+		<div data-role="header" data-position="fixed">
+			<h1>contact</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</div>
+		</div>
+	<div data-role="content" style="text-align: center; padding: 20px;">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam veritatis sint beatae omnis incidunt, quia voluptas excepturi, ratione aspernatur, sapiente nobis unde tenetur autem. Optio eius veritatis soluta dolorum.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, odio blanditiis temporibus aspernatur inventore ab minima illum impedit modi sunt! Voluptatibus, nulla! Veniam sapiente repellat cupiditate veritatis nulla deserunt optio?</p>
+			<img src="image1.jpg" alt=""
+				style="border-radius: 10px; box-shadow: black 5px 5px 15px; width: 200px; height: auto;">
+		<button>
+				<a href="#home" class="contact-btn" data-transition="flip" data-direction="reverse">go back to home</a>
+			</button>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>footer is here</h4>
+		</div>
+	</div>
+</body>
+
+</html>

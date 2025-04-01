@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Example</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>THIS IS EXPRESS EXAMPLE</h1>
+        <h3>It is a backend framework</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ratione dolorum, temporibus fugiat saepe reprehenderit quia! Atque eveniet ut et provident unde quasi. Illum unde ad sapiente vel aliquam impedit!</p>
+        <button onclick="showInfo()" class="btn">Learn More</button>
+        <div id="moreInfo" class="hidden">
+            <h3>More About Express.js</h3>
+            <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
+            <ul>
+                <li>Fast server-side development</li>
+                <li>Middleware support</li>
+                <li>Routing capabilities</li>
+                <li>Easy integration with databases</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showInfo() {
+            const infoDiv = document.getElementById('moreInfo');
+            const btn = document.querySelector('.btn');
+            
+            if (infoDiv.classList.contains('hidden')) {
+                infoDiv.classList.remove('hidden');
+                btn.textContent = 'Show Less';
+            } else {
+                infoDiv.classList.add('hidden');
+                btn.textContent = 'Learn More';
+            }
+        }
+    </script>
+
+    <style>
+        .hidden {
+            display: none;
+        }
+        
+        #moreInfo {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        #moreInfo ul {
+            padding-left: 20px;
+        }
+        
+        #moreInfo li {
+            margin-bottom: 8px;
+        }
+    </style>
+</body>
+</html>
