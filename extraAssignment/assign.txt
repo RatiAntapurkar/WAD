@@ -1,0 +1,71 @@
+Q.1 Illustrate the need for request Package
+
+The request package was developed to simplify the process of making HTTP requests in Node.js applications.
+It helps developers to easily perform actions such as:
+
+Sending and receiving data over the web.
+
+Communicating with APIs (Application Programming Interfaces).
+
+Handling various request methods like GET, POST, PUT, and DELETE.
+
+Managing request headers, form data, and file uploads effortlessly.
+
+Need for request package:
+
+Ease of use: Simple syntax for making network calls.
+
+Reduces code complexity: Handles lower-level networking details internally.
+
+API Integration: Essential for connecting servers to third-party services.
+
+Efficient error handling: Provides structured responses and errors.
+
+Therefore, the request package made it quick and efficient to perform client-server communications in Node.js based web development.
+
+Q.2 Implement a small application which will make use of the mentioned package
+
+Application:
+A simple Node.js application that fetches data from a public API. by program in  app.js file 
+
+output:-
+C:\Users\Windows 10\Desktop\WAD\WAD>cd extraAssignment
+
+C:\Users\Windows 10\Desktop\WAD\WAD\extraAssignment>npm install request
+npm warn deprecated har-validator@5.1.5: this library is no longer supported
+npm warn deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm warn deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+
+added 47 packages in 15s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+C:\Users\Windows 10\Desktop\WAD\WAD\extraAssignment>node app .js
+Data fetched successfully!
+{"current_user_url":"https://api.github.com/user","current_user_authorizations_html_url":"https://github.com/settings/connections/applications{/client_id}","authorizations_url":"https://api.github.com/authorizations","code_search_url":"https://api.github.com/search/code?q={query}{&page,per_page,sort,order}","commit_search_url":"https://api.github.com/search/commits?q={query}{&page,per_page,sort,order}","emails_url":"https://api.github.com/user/emails","emojis_url":"https://api.github.com/emojis","events_url":"https://api.github.com/events","feeds_url":"https://api.github.com/feeds","followers_url":"https://api.github.com/user/followers","following_url":"https://api.github.com/user/following{/target}","gists_url":"https://api.github.com/gists{/gist_id}","hub_url":"https://api.github.com/hub","issue_search_url":"https://api.github.com/search/issues?q={query}{&page,per_page,sort,order}","issues_url":"https://api.github.com/issues","keys_url":"https://api.github.com/user/keys","label_search_url":"https://api.github.com/search/labels?q={query}&repository_id={repository_id}{&page,per_page}","notifications_url":"https://api.github.com/notifications","organization_url":"https://api.github.com/orgs/{org}","organization_repositories_url":"https://api.github.com/orgs/{org}/repos{?type,page,per_page,sort}","organization_teams_url":"https://api.github.com/orgs/{org}/teams","public_gists_url":"https://api.github.com/gists/public","rate_limit_url":"https://api.github.com/rate_limit","repository_url":"https://api.github.com/repos/{owner}/{repo}","repository_search_url":"https://api.github.com/search/repositories?q={query}{&page,per_page,sort,order}","current_user_repositories_url":"https://api.github.com/user/repos{?type,page,per_page,sort}","starred_url":"https://api.github.com/user/starred{/owner}{/repo}","starred_gists_url":"https://api.github.com/gists/starred","topic_search_url":"https://api.github.com/search/topics?q={query}{&page,per_page}","user_url":"https://api.github.com/users/{user}","user_organizations_url":"https://api.github.com/user/orgs","user_repositories_url":"https://api.github.com/users/{user}/repos{?type,page,per_page,sort}","user_search_url":"https://api.github.com/search/users?q={query}{&page,per_page,sort,order}"}
+
+C:\Users\Windows 10\Desktop\WAD\WAD\extraAssignment>
+
+Q.3 Illustrate the need for Code of Ethics
+
+In the field of software development, a Code of Ethics is critical to ensure responsible and professional behavior.
+It defines the values, rules, and standards that developers should follow while building and managing software applications.
+
+Need for Code of Ethics:
+
+User Trust: Protects the rights and interests of users.
+
+Data Privacy and Security: Ensures sensitive user data is handled safely and responsibly.
+
+Professional Accountability: Developers are answerable for their work and its impact.
+
+Fairness and Non-Discrimination: Promotes equality and prevents bias in software systems.
+
+Quality Assurance: Encourages building reliable, error-free, and safe software products.
+
+Legal Compliance: Helps avoid legal issues by adhering to laws and regulations (like GDPR, Copyright laws).
+
+In short, Code of Ethics guides developers to build trustworthy, fair, and responsible software, maintaining public trust in the technology they create.
+
+------------------------------------------------------------------------------
