@@ -40,4 +40,16 @@ app.post("/stu", async (req, res) => {
 }
 );
 
+app.put("/stu/:id", async (req, res) => {
+    const updatedStu = await Stu.findByIdAndUpdate(
+        req.params.id,
+        { name: req.body.name, ph: req.body.ph },
+        { new: true } 
+    );
+    res.json(updatedStu);
+});
 
+app.delete("/stu/:id", async (req, res) => {
+    const deletedStu = await Stu.findByIdAndDelete(req.params.id);
+    res.json({ message: "Student deleted", deletedStu });
+});

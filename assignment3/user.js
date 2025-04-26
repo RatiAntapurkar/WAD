@@ -13,7 +13,7 @@ $(document).ready(function() {
         alert("User Added");
         
     })
-
+ 
     $("#delete").click(function() {
         const emailToDelete = $("#email").val(); 
         let users = JSON.parse(localStorage.getItem("users") || "[]")
